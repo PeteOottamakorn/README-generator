@@ -32,12 +32,10 @@ function renderLicenseSection(license) {
   }
   return "";
 }
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+
+function renderBodyTop(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseLink = renderLicenseLink(data.license);
-  const licenseSection = renderLicenseSection(data.license);
-
   return `
   # ${data.title}
   ${licenseBadge}
@@ -68,17 +66,29 @@ function generateMarkdown(data) {
 
   ## Tests
 
-  ${data.test}
+  ${data.test}`;
+}
 
-  ## Credits\n
-
-  ${licenseSection}
-
+function renderBodyBottom(data) {
+  return `
+  ## Credits
+  
   ## Questions
 
   If there are any questions, you may visit my GitHub page at
   https://github.com/${data.username}\n
   Or feel free to contact me at ${data.email}.`;
+}
+// TODO: Create a function to generate markdown for README
+function generateMarkdown(data) {
+  const bodyTop = renderBodyTop(data);
+  const licenseSection = renderLicenseSection(data.license);
+  const bodyBottom = renderBodyBottom(data);
+
+  return `
+  ${bodyTop}
+  ${licenseSection}
+  ${bodyBottom}`;
 }
 
 module.exports = generateMarkdown;

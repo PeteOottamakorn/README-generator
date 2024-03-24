@@ -1,6 +1,7 @@
 
+  
   # test
-  ![License](https://img.shields.io/badge/License-Apache_2.0-skyblue.svg)
+  ![License](https://img.shields.io/badge/License-MIT-skyblue.svg)
 
   ## Description
 
@@ -33,15 +34,11 @@
   ## Tests
 
   test
-
-  ## Credits
-
-
   
     ## License
     
     Please see the license file in the GitHub repository for more information
-
+  
   ## Questions
 
   If there are any questions, you may visit my GitHub page at

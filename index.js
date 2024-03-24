@@ -82,7 +82,7 @@ const questions = [
 function writeToFile(fileName, data) {
   let markdown = generateMarkdown(data);
   //fs.writeFile('file', data, callback function)
-  fs.writeFile(`${fileName}_README.md`, markdown, (err) => {
+  fs.writeFile(`README_${fileName}.md`, markdown, (err) => {
     if (err) {
       console.error(err);
     } else {
