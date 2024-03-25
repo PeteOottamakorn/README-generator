@@ -51,8 +51,9 @@ function renderBodyTop(data) {
   [Installation](#installation)\n
   [Usage](#usage)\n
   [Contributing](#contributing)\n
-  [Credits](#credits)\n
-  ${licenseLink}
+  [Tests](#tests)\n
+  ${licenseLink}\n
+  [Questions](#questions)
 
   ## Installation
   
@@ -64,6 +65,8 @@ function renderBodyTop(data) {
 
   ## Contributing
 
+  How to contribute to this project:\n
+  
   ${data.contribute}
 
   ## Tests

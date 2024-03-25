@@ -95,7 +95,8 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((answers) => {
     // console.log(answers.title);
-    writeToFile(answers.title, answers);
+    const fileName = answers.title.replace(/ /g, "_");
+    writeToFile(fileName, answers);
   });
 }
 
