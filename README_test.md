@@ -1,7 +1,7 @@
 
   
   # test
-  ![License](https://img.shields.io/badge/License-MIT-skyblue.svg)
+  
 
   ## Description
 
@@ -17,7 +17,7 @@
 
   [Credits](#credits)
 
-  [License](#license)
+  
 
   ## Installation
   
@@ -35,9 +35,8 @@
 
   test
   
-    ## License
-    
-    Please see the license file in the GitHub repository for more information
+  ## Credits
+  
   
   ## Questions
 

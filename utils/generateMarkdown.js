@@ -14,7 +14,6 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   //Link to add to Table of Contents if there is a license section
   if (license !== "None") {
-    //Link
     return `[License](#license)`;
   }
   return "";
@@ -26,9 +25,9 @@ function renderLicenseSection(license) {
   //Create the entire license section if there is a license present
   if (license !== "None") {
     return `
-    ## License
+    \n## License
     
-    Please see the license file in the GitHub repository for more information`;
+    \nPlease see the license file in the GitHub repository for more information`;
   }
   return "";
 }
@@ -71,8 +70,6 @@ function renderBodyTop(data) {
 
 function renderBodyBottom(data) {
   return `
-  ## Credits
-  
   ## Questions
 
   If there are any questions, you may visit my GitHub page at
