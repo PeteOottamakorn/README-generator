@@ -1,7 +1,7 @@
 
   
   # test
-  
+  ![License](https://img.shields.io/badge/License-BSD_2--Clause-skyblue.svg)
 
   ## Description
 
@@ -17,7 +17,7 @@
 
   [Credits](#credits)
 
-  
+  [License](#license)
 
   ## Installation
   
@@ -35,8 +35,11 @@
 
   test
   
-  ## Credits
-  
+    
+## License
+    
+    
+The license being used for this project is BSD 2-Clause. Please see the license file in the GitHub repository for more information
   
   ## Questions
 

@@ -1,10 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  // Modified license to create badge
+  const modLicense = license.replace(/ /g, "_");
+  const finalLicense = modLicense.replace(/-/g, "--");
   //Can use a !== 'None' to determine outcome
   if (license !== "None") {
     //Create the badge
-    return `![License](https://img.shields.io/badge/License-${license}-skyblue.svg)`;
+    return `![License](https://img.shields.io/badge/License-${finalLicense}-skyblue.svg)`;
   }
   return "";
 }
@@ -22,12 +25,12 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  //Create the entire license section if there is a license present
+  // Create the entire license section if there is a license present
   if (license !== "None") {
     return `
     \n## License
     
-    \nPlease see the license file in the GitHub repository for more information`;
+    \nThe license being used for this project is ${license}. Please see the license file in the GitHub repository for more information`;
   }
   return "";
 }
